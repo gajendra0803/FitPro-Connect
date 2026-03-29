@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Trainer</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <!-- <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            
+        }
+        #stage-container {
+            margin-top: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            color: blue;
+        }
+    </style> -->
+</head>
+<body>
+    <h2>AI Bicep Curl Detecter</h2>
+
+    <!-- Video Stream -->
+     <div class="container">
+        <div class="image-box">
+            <span class="fit-pro-text left-text">FIT</span>
+            <img src="{{ url_for('bicep_curl_feed') }}" width="700px" class="video-stream" >
+            <span class="fit-pro-text right-text">PRO</span>
+    </div>
+    </div>
+    <!-- Counter & Stage Info -->
+     
+    <div id="stage-container">
+        <p>Left Arm: <span id="left-stage">Waiting...</span></p>
+        <p>Right Arm: <span id="right-stage">Waiting...</span></p>
+        <p>Left Count: <span id="left-count">0</span></p>
+        <p>Right Count: <span id="right-count">0</span></p>
+    </div>
+
+    <!-- Start & Stop Counter -->
+    <button onclick="toggleCounter()">Start/Stop Counter</button>
+
+    <!-- Link to External JavaScript -->
+    <script src="{{ url_for('static', filename='bicep_curl.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Design</title>
+    <link rel="stylesheet" href="/static/Service-ai.css">
+</head>
+<body>
+    <div class="head">
+    <h1>AI Trainer Workouts</h1>
+    </div>
+    <div class="container">
+    <div class="card">
+        <img src="https://images.pexels.com/photos/3763115/pexels-photo-3763115.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Bicep curl">
+        <div class="card-body">
+            <h5 class="card-title">Bicep Curls</h5>
+            <p class="card-text">Biceps are more than just a muscle—they’re a symbol of strength, discipline, and hard work. Every curl brings you closer to sculpted perfection.</p>
+            <a href="#" class="btn btn-primary" onclick="bicepPopup()">Lets Curls</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://images.pexels.com/photos/1552249/pexels-photo-1552249.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Bicep curl">
+        <div class="card-body">
+            <h5 class="card-title">Squats</h5>
+            <p class="card-text">Squats aren’t just a leg workout—they build strength, stability, and resilience. Every rep is a step toward power and endurance.</p>
+            <a href="#" class="btn btn-primary" onclick="squatPopup()">Lets Squat</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://images.pexels.com/photos/12720234/pexels-photo-12720234.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Bicep curl">
+        <div class="card-body">
+            <h5 class="card-title">Push Ups</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary" onclick=" pushUp_popup()">Lets Start</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://media.istockphoto.com/id/1130442813/photo/athletic-woman-exercising-sit-ups-in-a-health-club.jpg?s=612x612&w=0&k=20&c=KqklWzJpHTdZQrEkDGBL8OoQz-asbiCQhEDdHEKk6Bw=" alt="Bicep curl">
+        <div class="card-body">
+            <h5 class="card-title">Crunches</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary" onclick="Crunches_popup()">Lets Start</a>
+        </div>
+    </div>
+
+    <div id="bicep" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="bicepclosePopup()">&times;</span>
+            <h2>Workout Instructions</h2>
+            <p>1. Stand straight in front of camera and hold dumbbells in both hands.</p>
+            <p>2. Keep your elbows close to your body.</p>
+            <p>3. Lift the weights by flexing your elbows.</p>
+            <p>4. Slowly lower the dumbbells back to the starting position.</p>
+            <p>5. To count the correct repeatations maintain angle of Hip, Shoulder, & Elbow to 15deg to 20deg</p>
+            <p>6. To count the curls please do a proper curls when your hands are greater than or equal 160deg than only Your curls will be down and for up the angle of your wrist, elbow and Shoulder less than 40%</p>
+            <p>7. Repeat Curls 12rep if you are begineer for 3 sets Only</p>
+            <button class="start-btn" onclick="start_bicep_curl()">Start</button>
+
+        </div>
+    </div>
+
+    <div id="squat" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="squatclosePopup()">&times;</span>
+            <h2>Workout Instructions</h2>
+            <p>1. Stand showing your side angle in front of camera.</p>
+            <p>2. Slowly go down and get up.</p>
+            <p>3. To count your squats repeatations your knee angles should be less than and equal to 100deg</p>
+            <p>4. To count your squats repeatations maintain your hip angles to be equal to or less than 90deg</p>
+            <p>5. Ensure your full posture should be in front of camera</p>
+            <p>6. Repeat squats 12rep if you are begineer for 3 sets Only</p>
+            <button class="start-btn" onclick="start_squat()">Start</button>
+
+        </div>
+    </div>
+
+    <div id="Pushup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="PushupclosePopup()">&times;</span>
+            <h2>Workout Instructions</h2>
+            <p>1. Please maintain your pushup posture as shown below.</p>
+            <img src="https://www.spotebi.com/wp-content/uploads/2014/10/push-up-exercise-illustration.gif" alt="pushupgif" class="pushpimg">
+            <p>2. Slowly go down and get up.</p>
+            <p>3. To count your pushup repeatations your elbow angle should be less than 90deg</p>
+            <p>4. Ensure your full posture should be in front of camera</p>
+            <p>6. Repeat pushup 12rep if you are begineer for 3 sets Only</p>
+            <button class="start-btn" onclick="start_pushup()">Start</button>
+
+        </div>
+    </div>
+
+    <div id="Crunches" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="Crunchesclose_popup()">&times;</span>
+            <h2>Workout Instructions</h2>
+            <p>1. Stand showing your side angle in front of camera.</p>
+            <p>2. Slowly go down and get up.</p>
+            <p>3. To count your squats repeatations your knee angles should be less than and equal to 100deg</p>
+            <p>4. To count your squats repeatations maintain your hip angles to be equal to or less than 90deg</p>
+            <p>5. Ensure your full posture should be in front of camera</p>
+            <p>6. Repeat squats 12rep if you are begineer for 3 sets Only</p>
+            <button class="start-btn" onclick="start_crunches()">Start</button>
+
+        </div>
+    </div>
+
+    
+
+    <script src="/static/instruction.js"></script>
+</div>
+</body>
+</html>

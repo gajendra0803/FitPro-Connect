@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tourney:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --bg-color: #111;
+    --snd-bg-color: #111;
+    --text-color:#E2DFD0;
+    --main-color: #F2613F;
+}
+
+body{
+    background-color: var(--bg-color);
+    text-align: center;
+    
+}
+
+.container {
+    position: relative;
+    text-align: center;
+}
+
+.image-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.fit-pro-text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 15rem;
+    color: rgba(255, 255, 255, 0.1); /* Light faded text */
+    font-family: "Tourney", sans-serif;;
+}
+
+.left-text {
+    left: 5%;
+}
+
+.right-text {
+    right: 1%;
+}
+
+
+.video-stream{
+    border-style: solid;
+    box-shadow: 0 0 2px 5px rgba(251, 90, 26, 0.3);
+    border-radius: 15px;
+    
+}
+
+#stage-container{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    color: var(--text-color);
+    font-size: 1.4rem;
+    font-family: "Goldman", sans-serif;;
+}
+
+h2{
+   font-size: 2rem;
+   color: var(--text-color);
+   font-family: "Audiowide", sans-serif;
+}
+
+button{
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: transparent;
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+    font-size: 1.3rem;
+    font-weight: 600;
+    transition: all 0.5s ease;
+    border-radius: 1rem;
+}
+
+button:hover{
+    background: var(--main-color);
+    color: var(--text-color);
+    box-shadow: 0 0 18px var(--main-color);
+}
